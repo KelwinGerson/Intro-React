@@ -3,6 +3,7 @@ import styles from './Post.module.css'
 export function Post() {
     return (
         <article className={styles.post}>
+            {/** CABEÇALHO */}
             <header>
                 <div className={styles.author}>
                     <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/83376362?v=4" />
@@ -15,6 +16,7 @@ export function Post() {
                     Publicado há 1h
                 </time>
             </header>
+            {/** CONTEÚDO DO POST */}
 
             <div className={styles.content}>
                 <p>Fala galeraa 👋 </p>
@@ -26,6 +28,20 @@ export function Post() {
                     <a href="">#rocketseat</a>
                 </p>
             </div>
+
+            {/** COMENTÁRIOS */}
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea 
+                    placeholder='Deixe um comentário...'
+                />
+            {/** BOTÃO */}
+                <footer>
+                    <button type='submit'>Comentar</button>
+                </footer>
+            </form>
         </article>
     )
 }
