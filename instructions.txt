@@ -18,3 +18,5 @@ Componente → pedaço menor do todo, que pode ser repetida com info diferente
     é uma função que retorna HTML
 
 Propriedades → info components
+
+Evitar uma otimização prematura
