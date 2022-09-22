@@ -1,0 +1,20 @@
+React é uma biblioteca
+DOM → Document Object Model - Representação do HTML
+JSX → JavaScript + XML
+
+SSR (Server Side Render):    
+    Modelo 'antigo' de criação web que o browser faz solicitações diretamente para o back-end + front-end que retornam o HTML/CSS/JS prontos.
+
+SPA (Single Page Application):
+    Back-end não fica responsavém pelo front, apenas pelos dados
+    Front end é uma aplicação 'separada' que pega o JSON e transforma em HTML/CSS
+        JSON consegue passar dados para o mobile também
+
+Vite:
+    - On demand file serving over native ESM, no bundling required! 
+    - Auto compiler
+
+Componente → pedaço menor do todo, que pode ser repetida com info diferente
+    é uma função que retorna HTML
+
+Propriedades → info components
