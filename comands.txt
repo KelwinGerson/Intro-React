@@ -1,3 +1,4 @@
 npm install -g n → versionamento of node
 npm create vite@latest → started project define name  and what language will selected (JS or TS )
 npm run dev → iniciar a aplicação
+npm i phosphor-react → libray for icons
