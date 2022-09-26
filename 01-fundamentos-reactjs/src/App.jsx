@@ -27,8 +27,8 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl : 'https://avatars.githubusercontent.com/u/83376362?v=4',
-      name: 'Kelwin Gerson',
+      avatarUrl : 'https://avatars.githubusercontent.com/u/28549527?v=4',
+      name: 'Rogério V. Bonfim',
       role: 'Cood. TI'
     },
     content: [
