@@ -20,3 +20,7 @@ Componente → pedaço menor do todo, que pode ser repetida com info diferente
 Propriedades → info components
 
 Evitar uma otimização prematura
+
+Times from create a component:
+- this thing repeat with some caract equal
+- encapsular 

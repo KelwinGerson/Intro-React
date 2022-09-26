@@ -1,16 +1,17 @@
 import styles from './Comment.module.css'
 import { ThumbsUp, Trash } from 'phosphor-react'
+import { Avatar } from './Avatar'
 
 export function Comment() {
     return (
         <div className={styles.comment}>
-            <img src="https://avatars.githubusercontent.com/u/83376362?v=4" />
+            <Avatar hasBorder={false} src="https://github.com/rvbonfimm.png" />
 
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
                     <header>
                         <div className={styles.authorAndTime}>
-                            <strong>Ana Caroline</strong>
+                            <strong>Rogério V. Bonfim</strong>
                             <time title='22 de setembro de 2022 às 09:16'dateTime='2022-09-22 09:16:00'>
                                 Publicado há 1h
                             </time>
@@ -25,7 +26,7 @@ export function Comment() {
                 <footer>
                     <button>
                         <ThumbsUp/> 
-                        Aplaudir <span>20</span>    
+                        Aplaudir <span> 24</span>    
                     </button>
                 </footer>
             </div>
