@@ -10,7 +10,7 @@ export function Post() {
                 <div className={styles.author}>
                     <Avatar hasBorder src='https://github.com/igorhms.png' />
                     <div className={styles.authorInfo}>
-                        <strong>Kelwin Gerson</strong>
+                        <strong>Igor Silva</strong>
                         <span> Analista de Sistemas</span>
                     </div>
                 </div>

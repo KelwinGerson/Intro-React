@@ -24,3 +24,5 @@ Evitar uma otimização prematura
 Times from create a component:
 - this thing repeat with some caract equal
 - encapsular 
+
+rem → é uma unidade relativa baseada no tamanho da página, logo ela se auto redimensiona auto
