@@ -25,4 +25,7 @@ Times from create a component:
 - this thing repeat with some caract equal
 - encapsular 
 
-rem → é uma unidade relativa baseada no tamanho da página, logo ela se auto redimensiona auto
+REM → é uma unidade relativa baseada no tamanho da página, logo ela se auto redimensiona auto
+
+forEach → don't have return. This value is 'void'.
+    This case we utilize the 'map' function which return something
