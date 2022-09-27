@@ -47,3 +47,9 @@ Deve ser única.
 1. Quando o estado altera;
 2. Quando a propriedade altera;
 3. Quando um componente pai renderiza novamente
+
+----------------------
+
+# Componentes se comunicam pelas propriedade, podendo utilizá-los como function
+
+# Estado são variáveis que eu quero que o componente monitore

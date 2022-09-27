@@ -7,9 +7,9 @@ import { useState } from 'react';
 
 
 export function Post({ author, publishedAt, content}) {
-    // estado são variáveis que eu quero que o componente monitore
+    // comments
     const [comments, setComments ] = useState([
-        'Post muito bacana!'
+        'Kelwin Rich'
     ])
 
     const [newCommentText, setNewCommentText] = useState('')
@@ -34,8 +34,12 @@ export function Post({ author, publishedAt, content}) {
         setNewCommentText('');
     }
 
-    function handleNewCommentChange () {
+    function handleNewCommentChange (comment) {
         setNewCommentText(event.target.value)
+    }
+
+    function deleteComment (comment) {
+        console.log(`Delete comment ${comment}`)
     }
 
     return (
@@ -81,7 +85,13 @@ export function Post({ author, publishedAt, content}) {
 
             <div className={styles.commentList}>
                 {comments.map(comment => {
-                    return <Comment key={comment} content={comment}/>
+                    return (
+                    <Comment 
+                        key={comment} 
+                        content={comment} 
+                        onDeleteComment={deleteComment}
+                    />
+                    )
                 })}
             </div>
         </article>
