@@ -29,3 +29,9 @@ REM → é uma unidade relativa baseada no tamanho da página, logo ela se auto 
 
 forEach → don't have return. This value is 'void'.
     This case we utilize the 'map' function which return something
+
+----------------------
+
+# Programação Imperativa → O que deve ser feito (passo-a-passo)
+
+# Programação declarativa → Quais são as condições para eu ter o resultado final.
