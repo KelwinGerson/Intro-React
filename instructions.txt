@@ -35,3 +35,15 @@ forEach → don't have return. This value is 'void'.
 # Programação Imperativa → O que deve ser feito (passo-a-passo)
 
 # Programação declarativa → Quais são as condições para eu ter o resultado final.
+
+----------------------
+
+# Key no React
+
+Deve ser única.
+
+3 momentos em que um componente é renderizado novamente no React:
+
+1. Quando o estado altera;
+2. Quando a propriedade altera;
+3. Quando um componente pai renderiza novamente
