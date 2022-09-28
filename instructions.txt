@@ -57,3 +57,13 @@ Deve ser única.
 ----------------------
 
 Imutabilidade → nunca é alterado o valor da variável e sim criado um novo valor(espaço na memória)
+
+----------------------
+
+Any event need receive a function not a execution
+
+----------------------
+
+# Closures React
+
+The state not remember of last value, we need use a variable or a function for taking back a last value.
