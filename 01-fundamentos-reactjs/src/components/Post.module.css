@@ -84,6 +84,17 @@
     margin-top: 1rem;
 }
 
+.commentForm footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+
+}
+
 .commentForm button[type=submit] {
     padding: 1rem 1.5rem;
     margin-top: 1rem;
@@ -96,19 +107,13 @@
     transition: background-color 0.1s;   
 }
 
-.commentForm footer {
-    visibility: hidden;
-    max-height: 0;
+.commentForm button[type=submit]:not(:disabled):hover {
+    background: var(--green-300);
 }
 
-.commentForm:focus-within footer {
-    visibility: visible;
-    max-height: none;
-
-}
-
-.commentForm button[type=submit]:hover {
-    background: var(--gray-600);
+.commentForm button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 .commentList {

@@ -26,7 +26,7 @@ export function Post({ author, publishedAt, content}) {
         }
     )
 
-    function handleCreateNewComment () {
+    function handleCreateNewComment() {
         // for don't redirect page when submit
         event.preventDefault()
         // Spread syntax (...)
@@ -35,7 +35,12 @@ export function Post({ author, publishedAt, content}) {
     }
 
     function handleNewCommentChange (comment) {
+        event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
+    }
+
+    function handleNewCommentInvalid() {
+        event.target.setCustomValidity('Este campo é obrigatório!')
     }
 
     // removing the comments with based on imutabilit
@@ -45,6 +50,8 @@ export function Post({ author, publishedAt, content}) {
         })
         setComments(commentsWithoutDeleteOne)
     }
+
+    const isNewCommentEmpty = newCommentText.length === 0
 
     return (
         <article className={styles.post}>
@@ -80,10 +87,15 @@ export function Post({ author, publishedAt, content}) {
                     placeholder='Deixe um comentário...'
                     value={newCommentText}
                     onChange={handleNewCommentChange}
+                    onInvalid={handleNewCommentInvalid}
+                    // required text on comment box
+                    required
                 />
                 {/** BOTÃO */}
                 <footer>
-                    <button type='submit'>Comentar</button>
+                    <button type='submit' disabled={isNewCommentEmpty}>
+                        Comentar
+                    </button>
                 </footer>
             </form>
 
