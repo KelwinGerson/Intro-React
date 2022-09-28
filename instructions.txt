@@ -53,3 +53,7 @@ Deve ser única.
 # Componentes se comunicam pelas propriedade, podendo utilizá-los como function
 
 # Estado são variáveis que eu quero que o componente monitore
+
+----------------------
+
+Imutabilidade → nunca é alterado o valor da variável e sim criado um novo valor(espaço na memória)

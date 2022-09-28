@@ -5,9 +5,7 @@ import { Avatar } from './Avatar'
 export function Comment({content, onDeleteComment}) {
     
     function handleDeleteComment () {
-        console.log('delete')
         onDeleteComment(content)
-        
     }
 
     return (

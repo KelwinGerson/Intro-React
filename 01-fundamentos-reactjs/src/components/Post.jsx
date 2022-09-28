@@ -38,8 +38,12 @@ export function Post({ author, publishedAt, content}) {
         setNewCommentText(event.target.value)
     }
 
-    function deleteComment (comment) {
-        console.log(`Delete comment ${comment}`)
+    // removing the comments with based on imutabilit
+    function deleteComment (commentToDelete) {
+        const commentsWithoutDeleteOne = comments.filter(comment => {
+            return comment != commentToDelete;
+        })
+        setComments(commentsWithoutDeleteOne)
     }
 
     return (
